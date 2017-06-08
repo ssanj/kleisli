@@ -1,15 +1,5 @@
 package net.ssanj.kc
 
-// import cats.data.Kleisli
-
-// val k1 = Kleisli((s: String) => if (s.trim.isEmpty) None else Option(s))
-// val k2 = Kleisli((s: String) => Option(s.length))
-// val k3 = Kleisli((n: Int) => if (n % 2 == 0) Option(true) else Option(false))
-
-// val k4 = k3 compose k2 compose k1
-// k4.run("testing")
-
-
 object KleisliComposition {
 
   def stringToNonEmptyString: String => Option[String] = value =>
