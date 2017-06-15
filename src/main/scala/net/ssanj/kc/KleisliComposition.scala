@@ -7,7 +7,4 @@ object KleisliComposition {
 
   def stringToNumber: String => Option[Int] = value =>
     if (value.matches("-?[0-9]+")) Option(value.toInt) else None
-
-  def numberToAge: Int => Option[Age] = num =>
-    if (num >= 1 && num <= 150) Option(Age(num)) else None
 }
